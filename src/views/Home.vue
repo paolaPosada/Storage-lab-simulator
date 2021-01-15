@@ -58,59 +58,59 @@
           <table class="table table-bordered ">
             <thead>
             <tr>
-              <th colspan="2">Disk</th>
-              <th>{{disk1.name}}</th>
-              <th>{{disk2.name}}</th>
-              <th>{{disk3.name}}</th>
+              <th colspan="2" style="text-align: center; font-size: 20px">Disk</th>
+              <th style="text-align: center; font-size: 20px">{{disk1.name}}</th>
+              <th style="text-align: center; font-size: 20px">{{disk2.name}}</th>
+              <th style="text-align: center; font-size: 20px">{{disk3.name}}</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-              <td colspan="2">T seek</td>
+              <td colspan="2" style="font-weight: bold;">T seek</td>
               <td style="font-style: italic">{{disk1.result.Tseek}} ms</td>
               <td style="font-style: italic">{{disk2.result.Tseek}} ms</td>
               <td style="font-style: italic">{{disk3.result.Tseek}} ms</td>
             </tr>
             <tr>
-              <td colspan="2">T rotation</td>
+              <td colspan="2" style="font-weight: bold;">T rotation</td>
               <td style="font-style: italic">{{disk1.result.Trotation}} ms</td>
               <td style="font-style: italic">{{disk2.result.Trotation}} ms</td>
               <td style="font-style: italic">{{disk3.result.Trotation}} ms</td>
             </tr>
             <tr>
-              <td rowspan="3">Random</td>
-              <td>Ttransfer</td>
+              <td rowspan="3" style="font-weight: bold;">Random</td>
+              <td style="font-weight: bold;"> Ttransfer</td>
               <td style="font-style: italic">{{disk1.result.random.Ttransfer}} ms</td>
               <td style="font-style: italic">{{disk2.result.random.Ttransfer}} ms</td>
               <td style="font-style: italic">{{disk3.result.random.Ttransfer}} ms</td>
             </tr>
             <tr>
-              <td>Ti/o</td>
+              <td style="font-weight: bold;">Ti/o</td>
               <td style="font-style: italic">{{disk1.result.random.Tio}} ms</td>
               <td style="font-style: italic">{{disk2.result.random.Tio}} ms</td>
               <td style="font-style: italic">{{disk3.result.random.Tio}} ms</td>
             </tr>
             <tr>
-              <td>Rio</td>
+              <td style="font-weight: bold;">Rio</td>
               <td style="font-style: italic">{{disk1.result.random.Rio}} MB/s</td>
               <td style="font-style: italic">{{disk2.result.random.Rio}} MB/s</td>
               <td style="font-style: italic">{{disk3.result.random.Rio}} MB/s</td>
             </tr>
             <tr>
-              <td rowspan="3">Secuential</td>
-              <td>Ttransfer</td>
+              <td rowspan="3" style="font-weight: bold;">Secuential</td>
+              <td style="font-weight: bold;">Ttransfer</td>
               <td style="font-style: italic">{{disk1.result.secuential.Ttransfer}} ms</td>
               <td style="font-style: italic">{{disk2.result.secuential.Ttransfer}} ms</td>
               <td style="font-style: italic">{{disk3.result.secuential.Ttransfer}} ms</td>
             </tr>
             <tr>
-              <td>Tio</td>
+              <td style="font-weight: bold;">Tio</td>
               <td style="font-style: italic">{{disk1.result.secuential.Tio}} ms</td>
               <td style="font-style: italic">{{disk2.result.secuential.Tio}} ms</td>
               <td style="font-style: italic">{{disk3.result.secuential.Tio}} ms</td>
             </tr>
             <tr>
-              <td>Rio</td>
+              <td style="font-weight: bold;">Rio</td>
               <td style="font-style: italic">{{disk1.result.secuential.Rio}} MB/s</td>
               <td style="font-style: italic">{{disk2.result.secuential.Rio}} MB/s</td>
               <td style="font-style: italic">{{disk3.result.secuential.Rio}} MB/s</td>
@@ -208,6 +208,9 @@ export default {
 }
 </script>
 <style >
-
+th{
+  font-weight: bold;
+  text-align: center;
+}
 </style>
 

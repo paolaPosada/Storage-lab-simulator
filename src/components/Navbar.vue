@@ -1,22 +1,31 @@
 <template>
-    <div id="nav">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="navbar-collapse  w-100 order-2 order-md-0 dual-collapse2">
-        <router-link to="/">Disk Comparation</router-link>| 
-        <router-link to="/Disk">How it works?</router-link>|
-        <router-link to="/about">About</router-link>
-        </div>
-      </nav>
-    </div>
+  <div id="nav">
+    <nav class="navbar navbar-light" style="background-color: #348f41">
+      <div class="navbar-left">
+        <router-link to="/"> Disk Comparation |</router-link> 
+        <router-link to="/Disk"> How it works? |</router-link> 
+        <router-link to="/about"> About |</router-link> 
+      </div>
+      <a class="navbar-brand" href="#" id="title">StorageLab Simulator</a>
+    </nav>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Navbar'
-
-}
+  name: "Navbar",
+};
 </script>
 <style >
-  font-weight: bold;
 
+#title {
+  font-weight: 700;
+  font-size: 35px;
+  font-weight: bold;
+}
+a {
+  font-weight: 600;
+  font-size: 25px;
+  font-weight: bold;
+}
 </style>
